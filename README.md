@@ -8,3 +8,4 @@
 - posts Create & Read & Update & Delete (CRUD)
 - posts CRUD verifying token from requests' headers' authorization 
 - layered pattern w/ API Architecture
+- middleware : req.body , authorization (token)
