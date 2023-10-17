@@ -2,13 +2,13 @@
 const express = require("express");
 const router = express.Router();
 
-const userRouter = require("./userRouter"); 
-const threadRouter = require("./threadRouter");
+const { userRouter } = require("./userRouter"); 
+const { postRouter } = require("./postRouter");
 
-router.use ("/users", userRouter.router)
-router.use ("/threads", threadRouter.router)
+router.use ("/users", userRouter)
+router.use ("/posts", postRouter)
 
-module.exports = router;
+module.exports = { router };
 
 
 // user가 있으면 userRouter로 보내고, 

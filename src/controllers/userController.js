@@ -28,7 +28,7 @@ const signUp = async (req, res) => {
     }
 
     // service 파일의 비즈니스 로직으로 'email, password, nickname' 보냄
-    await userServcie.signUp(email, password, nickname)
+    await userService.signUp(email, password, nickname)
 
     // 프론트에 res 보내는 부분 
     return res.status(201).json({

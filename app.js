@@ -6,11 +6,9 @@ const morgan = require('morgan');
 const dotenv = require("dotenv")
 dotenv.config()
 
-const routes = require("./src/routes");
+const { router } = require("./src/routes");
 
 const app = express();
-
-
 
 
   // 서버 구동 
