@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 const {postDao} = require('../models')
 
-const createPost = async (userId, content) => {
+const createPost = async (id, content) => {
 
   /*
     if(!token){
@@ -28,7 +28,7 @@ const createPost = async (userId, content) => {
     throw error;
       } 
 
-    const newPost = await postDao.createPost(userId, threadsId, content, createdAt)
+    const newPost = await postDao.createPost(id, threadsId, content, createdAt)
     return newPost
 }
   
